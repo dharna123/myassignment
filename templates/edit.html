@@ -1,0 +1,8 @@
+<form action="{{url_for('update_task',task_id=task.id)}}" method="post">
+    <input type="text" name="new_content" value="{{task.content}}">
+    <br>
+    <input type="checkbox" name="completed" {% if task.completed %}checked{% endif %}>
+    Completed
+    <br>
+    <button type="submit">Update Task</button>
+</form>
