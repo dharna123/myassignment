@@ -68,3 +68,6 @@ def delete_session(request):
 
 def home(request):
     return HttpResponse("welcome")
+
+def show(request):
+    return HttpResponse("hello world")
