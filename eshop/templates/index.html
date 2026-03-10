@@ -1,0 +1,12 @@
+
+{% include "header.html"  %}
+<html>
+    <body>
+        <form method="post" action="">
+        {% csrf_token %}
+       {{student.as_table}}
+       <input type="submit" value="Submit">
+       </form>
+    </body>
+</html>
+{% include "footer.html" %}

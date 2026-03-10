@@ -1,0 +1,11 @@
+<html>
+    <body>
+        <form action="/update/{{student.id}}" method="post">
+            {% csrf_token %}
+           <input type="text" name="name" value="{{student.name}}">
+           <br>
+           <input type="number" name="marks" value="{{student.marks}}">
+            <input type="submit" value="Edit">
+        </form>
+    </body>
+</html>
