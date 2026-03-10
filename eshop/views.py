@@ -65,3 +65,6 @@ def getsession(request):
 def delete_session(request):
     del request.session["username"]
     return HttpResponse("Session is deleted")
+
+def home(request):
+    return HttpResponse("welcome")
